@@ -1,0 +1,1328 @@
+2020-03-09 11:19:56.706 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 8172 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 11:19:56.708 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 11:19:56.748 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 11:19:56.749 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 11:19:56.750 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 11:19:57.450 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 11:19:57.625 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$31d62d9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 11:19:57.651 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 11:19:57.901 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 11:19:57.914 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:19:57.914 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 11:19:57.914 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 11:19:58.074 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 11:19:58.078 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 11:19:58.079 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1329 ms
+2020-03-09 11:19:58.385 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 11:19:58.631 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 11:19:58.645 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/hanwha/hive_if/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/] cannot be resolved to URL because it does not exist
+2020-03-09 11:19:58.646 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 11:19:58.654 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 11:19:58.657 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 11:19:58.675 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/hanwha/hive_if/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:195)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:498)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:298)
+	at org.springframework.boot.devtools.restart.ClassLoaderFilesResourcePatternResolver.getResources(ClassLoaderFilesResourcePatternResolver.java:113)
+	at org.springframework.context.support.GenericApplicationContext.getResources(GenericApplicationContext.java:233)
+	at com.hanwha.hive_if.config.DataSourceConfig.sqlSessionFactory(DataSourceConfig.java:58)
+	at com.hanwha.hive_if.config.DataSourceConfig$$EnhancerBySpringCGLIB$$30f6c42c.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.hanwha.hive_if.config.DataSourceConfig$$EnhancerBySpringCGLIB$$30f6c42c$$FastClassBySpringCGLIB$$2e837f5d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.DataSourceConfig$$EnhancerBySpringCGLIB$$30f6c42c.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2020-03-09 11:20:40.228 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 11:20:40.230 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 11:20:40.269 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 11:20:40.269 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 11:20:40.269 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 11:20:40.994 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 11:20:41.171 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 11:20:41.198 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 11:20:41.457 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 11:20:41.465 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:20:41.466 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 11:20:41.466 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 11:20:41.639 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 11:20:41.643 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 11:20:41.643 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1374 ms
+2020-03-09 11:20:41.943 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 11:20:42.196 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 11:20:42.413 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:20:42.703 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 11:20:42.727 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:20:42.746 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 11:20:42.750 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 2.925 seconds (JVM running for 3.797)
+2020-03-09 11:20:55.728 [http-nio-8093-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-09 11:20:55.734 [http-nio-8093-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-09 11:20:55.746 [http-nio-8093-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-03-09 11:22:09.173 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:22:09.174 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 11:22:09.245 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 11:22:09.639 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 11:22:09.639 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 11:22:09.913 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 11:22:09.931 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 11:22:09.933 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 11:22:09.981 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 11:22:09.982 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:22:09.982 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 11:22:09.982 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 11:22:10.025 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 11:22:10.026 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 11:22:10.026 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 383 ms
+2020-03-09 11:22:10.110 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 11:22:10.240 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 11:22:10.300 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:22:10.380 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 11:22:10.392 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:22:10.397 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 11:22:10.398 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.797 seconds (JVM running for 91.445)
+2020-03-09 11:22:10.402 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 11:23:05.411 [Thread-17] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:23:05.413 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 11:23:05.486 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 11:23:05.837 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 11:23:05.837 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 11:23:06.065 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 11:23:06.077 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 11:23:06.079 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 11:23:06.117 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 11:23:06.118 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:23:06.119 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 11:23:06.119 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 11:23:06.161 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 11:23:06.162 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 11:23:06.162 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 322 ms
+2020-03-09 11:23:06.254 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 11:23:06.389 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 11:23:06.444 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:23:06.512 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 11:23:06.522 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:23:06.529 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 11:23:06.529 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.724 seconds (JVM running for 147.576)
+2020-03-09 11:23:06.532 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 11:24:22.938 [Thread-24] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:24:22.940 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 11:24:23.015 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 11:24:23.360 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 11:24:23.360 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 11:24:23.594 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 11:24:23.606 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 11:24:23.607 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 11:24:23.646 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 11:24:23.647 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:24:23.647 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 11:24:23.647 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 11:24:23.685 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 11:24:23.686 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 11:24:23.686 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 324 ms
+2020-03-09 11:24:23.743 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 11:24:23.882 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 11:24:23.945 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:24:24.023 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 11:24:24.043 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:24:24.050 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 11:24:24.055 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.725 seconds (JVM running for 225.102)
+2020-03-09 11:24:24.062 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 11:24:28.511 [Thread-31] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:24:28.512 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 11:24:28.590 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 11:24:28.904 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 11:24:28.904 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 11:24:29.128 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 11:24:29.139 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 11:24:29.142 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 11:24:29.178 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 11:24:29.179 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:24:29.179 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 11:24:29.179 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 11:24:29.219 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 11:24:29.220 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 11:24:29.221 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 315 ms
+2020-03-09 11:24:29.270 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 11:24:29.399 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 11:24:29.443 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:24:29.509 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 11:24:29.518 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:24:29.523 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 11:24:29.524 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.648 seconds (JVM running for 230.57)
+2020-03-09 11:24:29.526 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 11:24:50.194 [Thread-38] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:24:50.196 [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 11:24:50.268 [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 11:24:50.586 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 11:24:50.586 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 11:24:50.813 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 11:24:50.826 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 11:24:50.827 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 11:24:50.863 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 11:24:50.864 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:24:50.864 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 11:24:50.864 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 11:24:50.904 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 11:24:50.905 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 11:24:50.905 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 317 ms
+2020-03-09 11:24:50.970 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 11:24:51.100 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 11:24:51.151 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:24:51.215 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 11:24:51.229 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 11:24:51.236 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 11:24:51.237 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.685 seconds (JVM running for 252.284)
+2020-03-09 11:24:51.243 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 11:40:04.803 [http-nio-8093-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-09 11:40:04.804 [http-nio-8093-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-09 11:40:04.807 [http-nio-8093-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2020-03-09 12:44:29.509 [Thread-45] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 12:44:29.510 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 12:44:29.584 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 12:44:29.979 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 12:44:29.979 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 12:44:30.225 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 12:44:30.242 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 12:44:30.243 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 12:44:30.293 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 12:44:30.293 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 12:44:30.294 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 12:44:30.294 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 12:44:30.335 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 12:44:30.336 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 12:44:30.336 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 355 ms
+2020-03-09 12:44:30.397 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 12:44:30.525 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 12:44:30.586 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 12:44:30.676 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 12:44:30.687 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 12:44:30.692 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 12:44:30.693 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.761 seconds (JVM running for 5031.724)
+2020-03-09 12:44:30.699 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 12:46:18.877 [Thread-52] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 12:46:18.878 [Thread-52] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 12:46:18.952 [Thread-52] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 12:46:19.330 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 12:46:19.331 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 12:46:19.605 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 12:46:19.620 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 12:46:19.626 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 12:46:19.649 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'errorPageCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration.class]: Unsatisfied dependency expressed through method 'errorPageCustomizer' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-03-09 12:46:19.854 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method errorPageCustomizer in org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration required a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'dispatcherServletRegistration' in 'DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration' not loaded because DispatcherServlet Registration found non dispatcher servlet dispatcherServlet
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' in your configuration.
+
+2020-03-09 12:47:18.722 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 12:47:18.722 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 12:47:18.980 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 12:47:18.994 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 12:47:18.996 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 12:47:19.010 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'errorPageCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration.class]: Unsatisfied dependency expressed through method 'errorPageCustomizer' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-03-09 12:47:19.147 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method errorPageCustomizer in org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration required a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'dispatcherServletRegistration' in 'DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration' not loaded because DispatcherServlet Registration found non dispatcher servlet dispatcherServlet
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' in your configuration.
+
+2020-03-09 12:47:53.874 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 12:47:53.874 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 12:47:54.286 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 12:47:54.301 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 12:47:54.303 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 12:47:54.322 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'errorPageCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration.class]: Unsatisfied dependency expressed through method 'errorPageCustomizer' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-03-09 12:47:54.491 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method errorPageCustomizer in org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration required a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'dispatcherServletRegistration' in 'DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration' not loaded because DispatcherServlet Registration found non dispatcher servlet dispatcherServlet
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' in your configuration.
+
+2020-03-09 13:25:40.081 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 10284 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:25:40.081 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:25:40.284 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:25:40.298 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db19d612] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:25:40.299 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:25:40.313 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'errorPageCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration.class]: Unsatisfied dependency expressed through method 'errorPageCustomizer' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-03-09 13:25:40.403 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method errorPageCustomizer in org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration required a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'dispatcherServletRegistration' in 'DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration' not loaded because DispatcherServlet Registration found non dispatcher servlet dispatcherServlet
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' in your configuration.
+
+2020-03-09 13:25:55.300 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 15288 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:25:55.303 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:25:55.345 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:25:55.346 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:25:55.346 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:25:56.121 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:25:56.361 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c67e7d4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:25:56.393 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:25:56.519 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'errorPageCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration.class]: Unsatisfied dependency expressed through method 'errorPageCustomizer' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-03-09 13:25:56.683 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method errorPageCustomizer in org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration required a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'dispatcherServletRegistration' in 'DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration' not loaded because DispatcherServlet Registration found non dispatcher servlet dispatcherServlet
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath' in your configuration.
+
+2020-03-09 13:31:55.201 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 14116 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:31:55.203 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:31:55.242 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:31:55.243 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:31:55.243 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:31:55.982 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:31:56.158 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$eee911a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:31:56.183 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:31:56.441 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:31:56.449 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:31:56.450 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:31:56.451 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:31:56.653 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:31:56.656 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:31:56.657 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1414 ms
+2020-03-09 13:31:56.978 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:31:57.306 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:31:57.519 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+2020-03-09 13:31:57.520 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:31:57.537 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:31:57.539 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:31:57.558 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:375)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:26)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$44f4830e.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$44f4830e$$FastClassBySpringCGLIB$$abd3da70.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$44f4830e.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:301)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.apache.cxf.common.classloader.ClassLoaderUtils.loadClass2(ClassLoaderUtils.java:319)
+	at org.apache.cxf.common.classloader.ClassLoaderUtils.loadClass(ClassLoaderUtils.java:279)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:299)
+	... 40 common frames omitted
+2020-03-09 13:32:39.404 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22396 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:32:39.407 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:32:39.477 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:32:39.477 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:32:39.477 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:32:40.164 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:32:40.342 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8271e7ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:32:40.369 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:32:40.656 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:32:40.666 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:32:40.667 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:32:40.667 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:32:40.848 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:32:40.852 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:32:40.852 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1374 ms
+2020-03-09 13:32:41.155 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:32:41.425 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:32:41.637 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002ServiceService from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002Service
+2020-03-09 13:32:41.892 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 13:32:42.029 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 13:32:42.275 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 13:32:42.297 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:32:42.316 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 13:32:42.320 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 3.304 seconds (JVM running for 4.137)
+2020-03-09 13:33:24.769 [http-nio-8093-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-09 13:33:24.769 [http-nio-8093-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-09 13:33:24.775 [http-nio-8093-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-03-09 13:36:58.284 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 13:36:58.285 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:36:58.357 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:36:58.700 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22396 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:36:58.700 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:36:58.950 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:36:58.966 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8271e7ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:36:58.968 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:36:59.012 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:36:59.012 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:36:59.013 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:36:59.013 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:36:59.054 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:36:59.055 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:36:59.055 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 352 ms
+2020-03-09 13:36:59.127 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:36:59.258 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:36:59.288 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+2020-03-09 13:36:59.289 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:36:59.297 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:36:59.298 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:36:59.314 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:375)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:24)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$d87d5957.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$d87d5957$$FastClassBySpringCGLIB$$ac148e19.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$d87d5957.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: Could not load Webservice SEI
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:301)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.apache.cxf.common.classloader.ClassLoaderUtils.loadClass2(ClassLoaderUtils.java:319)
+	at org.apache.cxf.common.classloader.ClassLoaderUtils.loadClass(ClassLoaderUtils.java:279)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:299)
+	... 40 common frames omitted
+2020-03-09 13:38:04.623 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22396 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:38:04.624 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:38:04.860 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:38:04.874 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8271e7ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:38:04.876 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:38:04.919 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:38:04.920 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:38:04.920 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:38:04.920 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:38:04.976 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:38:04.979 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:38:04.980 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 354 ms
+2020-03-09 13:38:05.037 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:38:05.176 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:38:05.216 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+2020-03-09 13:38:05.216 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:38:05.226 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:38:05.227 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:38:05.233 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:375)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:24)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$d87d5957.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$d87d5957$$FastClassBySpringCGLIB$$ac148e19.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$d87d5957.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:312)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	... 37 common frames omitted
+2020-03-09 13:38:15.959 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 11168 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:38:15.961 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:38:16.035 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:38:16.035 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:38:16.036 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:38:16.749 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:38:16.925 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bd80045c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:38:16.952 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:38:17.207 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:38:17.216 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:38:17.216 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:38:17.217 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:38:17.388 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:38:17.391 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:38:17.391 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1354 ms
+2020-03-09 13:38:17.692 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:38:17.949 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:38:18.154 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+2020-03-09 13:38:18.155 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:38:18.180 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:38:18.183 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:38:18.200 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:375)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:24)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$138b75c9.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$138b75c9$$FastClassBySpringCGLIB$$f352fe52.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$138b75c9.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:312)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	... 37 common frames omitted
+2020-03-09 13:41:22.835 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 16492 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:41:22.868 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:41:22.907 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:41:22.908 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:41:22.908 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:41:23.635 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:41:23.814 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$df26e4f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:41:23.842 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:41:24.105 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:41:24.113 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:41:24.114 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:41:24.114 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:41:24.293 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:41:24.296 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:41:24.297 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1389 ms
+2020-03-09 13:41:24.604 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:41:24.887 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:41:25.105 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+2020-03-09 13:41:25.106 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:41:25.121 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:41:25.124 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:41:25.141 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:375)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:24)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$35325660.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$35325660$$FastClassBySpringCGLIB$$21b440ce.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$35325660.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:312)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	... 37 common frames omitted
+2020-03-09 13:44:18.453 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 8892 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:44:18.456 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:44:18.529 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:44:18.530 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:44:18.530 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:44:19.265 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:44:19.441 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$483f4d7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:44:19.470 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:44:19.745 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:44:19.755 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:44:19.756 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:44:19.756 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:44:19.930 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:44:19.935 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:44:19.935 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1404 ms
+2020-03-09 13:44:20.299 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:44:20.562 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:44:20.785 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+2020-03-09 13:44:20.785 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:44:20.800 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:44:20.803 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:44:20.823 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:375)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:24)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$9e4abee9.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$9e4abee9$$FastClassBySpringCGLIB$$8086be62.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$9e4abee9.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:312)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	... 37 common frames omitted
+2020-03-09 13:47:37.916 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 2032 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:47:37.919 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:47:37.958 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:47:37.958 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:47:37.958 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:47:38.690 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:47:38.866 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$320dc043] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:47:38.892 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:47:39.145 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:47:39.155 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:47:39.155 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:47:39.155 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:47:39.323 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:47:39.326 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:47:39.327 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1369 ms
+2020-03-09 13:47:39.632 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:47:39.908 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:47:40.111 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+2020-03-09 13:47:40.112 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:47:40.143 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:47:40.146 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:47:40.164 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:375)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:24)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$881931b0.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$881931b0$$FastClassBySpringCGLIB$$c4c4d006.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$881931b0.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: javax.xml.ws.WebServiceException: Attributes portName, serviceName and endpointInterface are not allowed in the @WebService annotation of an SEI.
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:312)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	... 37 common frames omitted
+2020-03-09 13:48:10.961 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22028 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:48:10.993 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:48:11.031 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:48:11.032 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:48:11.032 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:48:11.748 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:48:11.924 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2d850229] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:48:11.949 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:48:12.208 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:48:12.216 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:48:12.217 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:48:12.217 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:48:12.391 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:48:12.394 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:48:12.395 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1363 ms
+2020-03-09 13:48:12.710 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:48:12.965 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:48:13.182 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002Service from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 13:48:13.531 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 13:48:13.671 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 13:48:13.873 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 13:48:13.897 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:48:13.918 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 13:48:13.921 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 3.343 seconds (JVM running for 4.155)
+2020-03-09 13:49:29.110 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 13:49:29.111 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:49:29.183 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:49:29.505 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22028 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:49:29.505 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:49:29.741 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:49:29.756 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2d850229] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:49:29.758 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:49:29.798 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:49:29.798 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:49:29.798 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:49:29.799 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:49:29.838 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:49:29.839 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:49:29.839 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 332 ms
+2020-03-09 13:49:29.914 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:49:30.045 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:49:30.072 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002Service from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 13:49:30.091 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 13:49:30.136 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 13:49:30.199 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 13:49:30.214 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:49:30.220 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 13:49:30.221 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.752 seconds (JVM running for 80.456)
+2020-03-09 13:49:30.225 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 13:53:28.795 [Thread-17] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 13:53:28.797 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:53:28.870 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:53:29.262 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22028 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:53:29.262 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:53:29.513 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:53:29.528 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2d850229] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:53:29.529 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:53:29.575 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:53:29.576 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:53:29.576 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:53:29.576 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:53:29.618 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:53:29.619 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:53:29.619 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 355 ms
+2020-03-09 13:53:29.689 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:53:29.819 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:53:29.844 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002Service from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 13:53:29.860 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 13:53:29.862 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.IllegalStateException: Cannot invoke method after endpoint has been published.
+2020-03-09 13:53:29.863 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:53:29.872 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:53:29.872 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:53:29.886 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.IllegalStateException: Cannot invoke method after endpoint has been published.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.IllegalStateException: Cannot invoke method after endpoint has been published.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot invoke method after endpoint has been published.
+	at org.apache.cxf.jaxws.EndpointImpl.checkPublishable(EndpointImpl.java:537)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:326)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:25)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$83907396.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$83907396$$FastClassBySpringCGLIB$$c96f6d3d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$83907396.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2020-03-09 13:59:09.867 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22028 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:59:09.867 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:59:10.094 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:59:10.108 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2d850229] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:59:10.110 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:59:10.151 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:59:10.152 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:59:10.152 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:59:10.152 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:59:10.206 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:59:10.206 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:59:10.206 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 337 ms
+2020-03-09 13:59:10.262 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:59:10.392 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:59:10.415 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002Service from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 13:59:10.430 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 13:59:10.432 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.IllegalStateException: Cannot invoke method after endpoint has been published.
+2020-03-09 13:59:10.432 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 13:59:10.441 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 13:59:10.441 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 13:59:10.447 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/hanwha/hive_if/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.IllegalStateException: Cannot invoke method after endpoint has been published.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hanwha.hive_if.Application.main(Application.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.IllegalStateException: Cannot invoke method after endpoint has been published.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot invoke method after endpoint has been published.
+	at org.apache.cxf.jaxws.EndpointImpl.checkPublishable(EndpointImpl.java:537)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:326)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.hanwha.hive_if.config.WebServiceConfig.endpoint(WebServiceConfig.java:26)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$83907396.CGLIB$endpoint$0(<generated>)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$83907396$$FastClassBySpringCGLIB$$c96f6d3d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.hanwha.hive_if.config.WebServiceConfig$$EnhancerBySpringCGLIB$$83907396.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2020-03-09 13:59:32.200 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22028 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 13:59:32.201 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 13:59:32.446 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 13:59:32.460 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2d850229] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:59:32.461 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 13:59:32.504 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 13:59:32.505 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:59:32.505 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 13:59:32.505 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 13:59:32.546 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 13:59:32.547 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 13:59:32.547 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 340 ms
+2020-03-09 13:59:32.599 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 13:59:32.730 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 13:59:32.777 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002Service from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 13:59:32.797 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 13:59:32.798 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002Service from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 13:59:32.801 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2003
+2020-03-09 13:59:32.835 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 13:59:32.892 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 13:59:32.902 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 13:59:32.907 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 13:59:32.908 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.754 seconds (JVM running for 683.141)
+2020-03-09 13:59:32.910 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 14:05:16.112 [Thread-24] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:05:16.113 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 14:05:16.188 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 14:05:16.563 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22028 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 14:05:16.563 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 14:05:16.777 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 14:05:16.789 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2d850229] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 14:05:16.791 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 14:05:16.828 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 14:05:16.829 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:05:16.829 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 14:05:16.829 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 14:05:16.868 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 14:05:16.869 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 14:05:16.869 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 304 ms
+2020-03-09 14:05:16.925 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 14:05:17.054 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 14:05:17.076 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002Service from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:05:17.093 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 14:05:17.094 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.hive_if.hanwha.com/}M2MMML030M2002Service from class com.hanwha.hive_if.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:05:17.097 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2003
+2020-03-09 14:05:17.133 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:05:17.199 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 14:05:17.208 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:05:17.213 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 14:05:17.215 [restartedMain] INFO  com.hanwha.hive_if.Application - Started Application in 0.682 seconds (JVM running for 1027.447)
+2020-03-09 14:05:17.217 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 14:06:07.708 [Thread-37] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:06:07.710 [Thread-37] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 14:06:07.782 [Thread-37] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 14:06:08.151 [restartedMain] INFO  com.hanwha.hive_if.Application - Starting Application on 00000000 with PID 22028 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 14:06:08.151 [restartedMain] INFO  com.hanwha.hive_if.Application - The following profiles are active: local
+2020-03-09 14:06:08.356 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hanwha.hive_if]' package. Please check your configuration.
+2020-03-09 14:06:08.368 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2d850229] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 14:06:08.369 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 14:06:08.404 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 14:06:08.405 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:06:08.405 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 14:06:08.405 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 14:06:08.445 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 14:06:08.446 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 14:06:08.446 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 293 ms
+2020-03-09 14:06:08.534 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:06:08.564 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-03-09 14:06:08.564 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:06:08.565 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-09 14:06:08.573 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-03-09 14:06:30.106 [restartedMain] INFO  com.stw.Application - Starting Application on 00000000 with PID 19104 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 14:06:30.109 [restartedMain] INFO  com.stw.Application - The following profiles are active: local
+2020-03-09 14:06:30.150 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 14:06:30.151 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 14:06:30.151 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 14:06:30.874 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw]' package. Please check your configuration.
+2020-03-09 14:06:31.053 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4b9f3327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 14:06:31.080 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 14:06:31.333 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 14:06:31.343 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:06:31.344 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 14:06:31.344 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 14:06:31.509 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 14:06:31.512 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 14:06:31.512 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1361 ms
+2020-03-09 14:06:31.809 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 14:06:32.062 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 14:06:32.283 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.stw.com/}M2MMML030M2002Service from class com.stw.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:06:32.624 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 14:06:32.632 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.stw.com/}M2MMML030M2002Service from class com.stw.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:06:32.636 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2003
+2020-03-09 14:06:32.766 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:06:32.973 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 14:06:32.995 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:06:33.014 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 14:06:33.017 [restartedMain] INFO  com.stw.Application - Started Application in 3.306 seconds (JVM running for 4.156)
+2020-03-09 14:21:48.222 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:21:48.223 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 14:21:48.301 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 14:21:48.657 [restartedMain] INFO  com.stw.Application - Starting Application on 00000000 with PID 19104 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 14:21:48.657 [restartedMain] INFO  com.stw.Application - The following profiles are active: local
+2020-03-09 14:21:48.896 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw]' package. Please check your configuration.
+2020-03-09 14:21:48.911 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4b9f3327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 14:21:48.913 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 14:21:48.954 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 14:21:48.955 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:21:48.955 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 14:21:48.955 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 14:21:48.999 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 14:21:49.000 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 14:21:49.001 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 340 ms
+2020-03-09 14:21:49.074 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 14:21:49.204 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 14:21:49.231 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:21:49.248 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 14:21:49.251 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:21:49.253 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2003
+2020-03-09 14:21:49.301 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:21:49.369 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 14:21:49.383 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:21:49.389 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 14:21:49.390 [restartedMain] INFO  com.stw.Application - Started Application in 0.769 seconds (JVM running for 920.528)
+2020-03-09 14:21:49.394 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 14:22:34.384 [Thread-17] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:22:34.386 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 14:22:34.469 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 14:22:34.829 [restartedMain] INFO  com.stw.Application - Starting Application on 00000000 with PID 19104 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 14:22:34.829 [restartedMain] INFO  com.stw.Application - The following profiles are active: local
+2020-03-09 14:22:35.072 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw]' package. Please check your configuration.
+2020-03-09 14:22:35.086 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4b9f3327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 14:22:35.088 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 14:22:35.129 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 14:22:35.130 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:22:35.130 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 14:22:35.131 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 14:22:35.172 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 14:22:35.173 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 14:22:35.174 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 342 ms
+2020-03-09 14:22:35.245 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 14:22:35.377 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 14:22:35.405 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:22:35.421 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 14:22:35.423 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:22:35.427 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2003
+2020-03-09 14:22:35.473 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:22:35.540 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 14:22:35.554 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:22:35.560 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 14:22:35.565 [restartedMain] INFO  com.stw.Application - Started Application in 0.769 seconds (JVM running for 966.703)
+2020-03-09 14:22:35.571 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 14:31:25.583 [Thread-24] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:31:25.585 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 14:31:25.662 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 14:31:26.017 [restartedMain] INFO  com.stw.Application - Starting Application on 00000000 with PID 19104 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 14:31:26.017 [restartedMain] INFO  com.stw.Application - The following profiles are active: local
+2020-03-09 14:31:26.236 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw]' package. Please check your configuration.
+2020-03-09 14:31:26.251 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4b9f3327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 14:31:26.253 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 14:31:26.297 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 14:31:26.297 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:31:26.298 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 14:31:26.298 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 14:31:26.337 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 14:31:26.339 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 14:31:26.339 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 320 ms
+2020-03-09 14:31:26.392 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 14:31:26.523 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 14:31:26.549 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:31:26.566 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 14:31:26.568 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 14:31:26.571 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2003
+2020-03-09 14:31:26.607 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 14:31:26.669 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 14:31:26.679 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 14:31:26.684 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 14:31:26.686 [restartedMain] INFO  com.stw.Application - Started Application in 0.702 seconds (JVM running for 1497.821)
+2020-03-09 14:31:26.687 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-09 15:15:36.854 [Thread-31] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 15:15:36.856 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-09 15:15:36.926 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-09 15:15:37.289 [restartedMain] INFO  com.stw.Application - Starting Application on 00000000 with PID 19104 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-09 15:15:37.289 [restartedMain] INFO  com.stw.Application - The following profiles are active: local
+2020-03-09 15:15:37.548 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw]' package. Please check your configuration.
+2020-03-09 15:15:37.567 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4b9f3327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 15:15:37.569 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-09 15:15:37.623 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-09 15:15:37.623 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-09 15:15:37.624 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-09 15:15:37.624 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 15:15:37.671 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-09 15:15:37.672 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-09 15:15:37.672 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 381 ms
+2020-03-09 15:15:37.749 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-09 15:15:37.878 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-09 15:15:37.910 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 15:15:37.928 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-09 15:15:37.930 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-09 15:15:37.933 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2003
+2020-03-09 15:15:37.981 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 15:15:38.067 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-09 15:15:38.082 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-09 15:15:38.087 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-09 15:15:38.087 [restartedMain] INFO  com.stw.Application - Started Application in 0.832 seconds (JVM running for 4149.219)
+2020-03-09 15:15:38.090 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

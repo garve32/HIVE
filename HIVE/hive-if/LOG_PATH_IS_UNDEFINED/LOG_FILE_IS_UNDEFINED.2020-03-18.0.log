@@ -1,0 +1,1084 @@
+2020-03-18 13:07:29.140 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 2236 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 13:07:29.142 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 13:07:29.219 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@474d94bd: startup date [Wed Mar 18 13:07:29 KST 2020]; root of context hierarchy
+2020-03-18 13:07:30.014 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 13:07:30.155 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-18 13:07:30.191 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3bf7a4ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 13:07:30.231 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 13:07:30.687 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 13:07:30.700 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-18 13:07:30.713 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 13:07:30.713 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.37
+2020-03-18 13:07:30.717 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\HIVE\tools\java-1.8.0-openjdk-1.8.0.242-1.b08.ojdkbuild.windows.x86_64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;D:\app\owner01\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\Softcamp\SDS;C:\Windows\Softcamp\SDS\x64;C:\WINDOWS\SoftCamp\SDK;C:\WINDOWS\SoftCamp\SDK\x64;C:\WINDOWS\SoftCamp\Common;C:\WINDOWS\SoftCamp\Common\x64;C:\WINDOWS\SoftCamp\SDS;C:\WINDOWS\SoftCamp\SDS\x64;C:\WINDOWS\SoftCamp\SDK;C:\WINDOWS\SoftCamp\SDK\x64;C:\WINDOWS\SoftCamp\VSD;C:\WINDOWS\SoftCamp\VSD\x64;C:\Program Files\Git\cmd;C:\Go\bin;C:\Program Files (x86)\Brackets\command;C:\Bitnami\redmine-3.4.6-5\ruby\bin;C:\CPMS\bin\jdk\jdk1.8.0_144\bin;D:\app\owner01\product\11.2.0\client_1\bin;C:\Program Files\ImageMagick-7.0.9-Q16;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\ImageMagick-6.9.10-Q16;C:\Users\owner01\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\owner01\AppData\Local\Programs\Fiddler
+[0x7FFF332563B0] ANOMALY: meaningless REX prefix used;C:\Users\owner01\AppData\Local\atom\bin;C:\Users\owner01\go\bin;;.]
+2020-03-18 13:07:30.996 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jakarta.xml.bind-api-2.3.2.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:07:30.997 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\txw2-2.3.2.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:07:30.997 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\istack-commons-runtime-3.0.8.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:07:30.998 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\stax-ex-1.8.1.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:07:30.999 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\FastInfoset-1.2.16.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:07:31.000 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jakarta.activation-api-1.2.1.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:07:31.005 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 13:07:31.010 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 13:07:31.010 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1791 ms
+2020-03-18 13:07:31.370 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-03-18 13:07:31.372 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet CXFServlet mapped to [/ep/jaxws-services/*]
+2020-03-18 13:07:31.374 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-18 13:07:31.374 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-18 13:07:31.375 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-18 13:07:31.375 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-18 13:07:31.474 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 13:07:31.857 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 13:07:31.857 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 13:07:32.197 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 13:07:32.562 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 13:07:32.630 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:07:32.822 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@474d94bd: startup date [Wed Mar 18 13:07:29 KST 2020]; root of context hierarchy
+2020-03-18 13:07:32.889 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-18 13:07:32.891 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-18 13:07:32.918 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:07:32.918 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:07:33.227 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 13:07:33.250 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-18 13:07:33.251 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2020-03-18 13:07:33.251 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-18 13:07:33.255 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2020-03-18 13:07:33.256 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-03-18 13:07:33.265 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-18 13:07:33.267 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-18 13:07:33.295 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 13:07:33.300 [restartedMain] INFO  com.stw.ep.Application - Started Application in 4.514 seconds (JVM running for 6.618)
+2020-03-18 13:10:01.153 [Thread-10] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@474d94bd: startup date [Wed Mar 18 13:07:29 KST 2020]; root of context hierarchy
+2020-03-18 13:10:01.157 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-18 13:10:01.157 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2020-03-18 13:10:01.158 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 13:10:01.313 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 13:10:01.810 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 2236 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 13:10:01.811 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 13:10:01.813 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38c68980: startup date [Wed Mar 18 13:10:01 KST 2020]; root of context hierarchy
+2020-03-18 13:10:02.253 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 13:10:02.268 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-18 13:10:02.272 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3bf7a4ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 13:10:02.278 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 13:10:02.376 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 13:10:02.376 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-18 13:10:02.377 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 13:10:02.377 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.37
+2020-03-18 13:10:02.420 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jakarta.xml.bind-api-2.3.2.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:02.421 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\txw2-2.3.2.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:02.421 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\istack-commons-runtime-3.0.8.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:02.422 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\stax-ex-1.8.1.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:02.422 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\FastInfoset-1.2.16.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:02.423 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jakarta.activation-api-1.2.1.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:02.423 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 13:10:02.424 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 13:10:02.424 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 611 ms
+2020-03-18 13:10:02.483 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-03-18 13:10:02.484 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet CXFServlet mapped to [/ep/jaxws-services/*]
+2020-03-18 13:10:02.484 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-18 13:10:02.484 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-18 13:10:02.485 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-18 13:10:02.485 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-18 13:10:02.512 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 13:10:02.656 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 13:10:02.656 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 13:10:02.700 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 13:10:02.721 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 13:10:02.731 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:10:02.768 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38c68980: startup date [Wed Mar 18 13:10:01 KST 2020]; root of context hierarchy
+2020-03-18 13:10:02.776 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-18 13:10:02.776 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-18 13:10:02.783 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:10:02.783 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:10:02.835 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 13:10:02.864 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-18 13:10:02.864 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2020-03-18 13:10:02.864 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-18 13:10:02.867 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2020-03-18 13:10:02.868 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-03-18 13:10:02.872 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-18 13:10:02.874 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-18 13:10:02.882 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 13:10:02.884 [restartedMain] INFO  com.stw.ep.Application - Started Application in 1.113 seconds (JVM running for 156.201)
+2020-03-18 13:10:02.889 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-18 13:10:10.078 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2020-03-18 13:10:10.078 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38c68980: startup date [Wed Mar 18 13:10:01 KST 2020]; root of context hierarchy
+2020-03-18 13:10:10.082 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-18 13:10:10.082 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2020-03-18 13:10:10.083 [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 13:10:10.163 [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 13:10:14.279 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 8168 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 13:10:14.281 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 13:10:14.350 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@572cfc3: startup date [Wed Mar 18 13:10:14 KST 2020]; root of context hierarchy
+2020-03-18 13:10:15.100 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 13:10:15.232 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-18 13:10:15.272 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$59b294bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 13:10:15.308 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 13:10:15.723 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 13:10:15.734 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-18 13:10:15.745 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 13:10:15.746 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.37
+2020-03-18 13:10:15.750 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\HIVE\tools\java-1.8.0-openjdk-1.8.0.242-1.b08.ojdkbuild.windows.x86_64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;D:\app\owner01\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\Softcamp\SDS;C:\Windows\Softcamp\SDS\x64;C:\WINDOWS\SoftCamp\SDK;C:\WINDOWS\SoftCamp\SDK\x64;C:\WINDOWS\SoftCamp\Common;C:\WINDOWS\SoftCamp\Common\x64;C:\WINDOWS\SoftCamp\SDS;C:\WINDOWS\SoftCamp\SDS\x64;C:\WINDOWS\SoftCamp\SDK;C:\WINDOWS\SoftCamp\SDK\x64;C:\WINDOWS\SoftCamp\VSD;C:\WINDOWS\SoftCamp\VSD\x64;C:\Program Files\Git\cmd;C:\Go\bin;C:\Program Files (x86)\Brackets\command;C:\Bitnami\redmine-3.4.6-5\ruby\bin;C:\CPMS\bin\jdk\jdk1.8.0_144\bin;D:\app\owner01\product\11.2.0\client_1\bin;C:\Program Files\ImageMagick-7.0.9-Q16;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\ImageMagick-6.9.10-Q16;C:\Users\owner01\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\owner01\AppData\Local\Programs\Fiddler
+[0x7FFF332563B0] ANOMALY: meaningless REX prefix used;C:\Users\owner01\AppData\Local\atom\bin;C:\Users\owner01\go\bin;;.]
+2020-03-18 13:10:15.919 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jakarta.xml.bind-api-2.3.2.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:15.921 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\txw2-2.3.2.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:15.922 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\istack-commons-runtime-3.0.8.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:15.923 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\stax-ex-1.8.1.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:15.924 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\FastInfoset-1.2.16.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:15.924 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jakarta.activation-api-1.2.1.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:10:15.930 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 13:10:15.934 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 13:10:15.934 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1584 ms
+2020-03-18 13:10:16.235 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-03-18 13:10:16.236 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet CXFServlet mapped to [/ep/jaxws-services/*]
+2020-03-18 13:10:16.239 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-18 13:10:16.239 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-18 13:10:16.240 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-18 13:10:16.240 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-18 13:10:16.324 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 13:10:16.665 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 13:10:16.665 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 13:10:17.013 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 13:10:17.363 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 13:10:17.438 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:10:17.639 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@572cfc3: startup date [Wed Mar 18 13:10:14 KST 2020]; root of context hierarchy
+2020-03-18 13:10:17.688 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-18 13:10:17.690 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-18 13:10:17.713 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:10:17.714 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:10:18.012 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 13:10:18.037 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-18 13:10:18.038 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2020-03-18 13:10:18.038 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-18 13:10:18.043 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2020-03-18 13:10:18.044 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-03-18 13:10:18.053 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-18 13:10:18.055 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-18 13:10:18.076 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 13:10:18.081 [restartedMain] INFO  com.stw.ep.Application - Started Application in 4.151 seconds (JVM running for 4.996)
+2020-03-18 13:11:44.517 [http-nio-8093-exec-8] INFO  o.a.c.services.M2MMML030M2002.REQ_IN - REQ_IN
+    Address: http://localhost:8093/ep/jaxws-services/M2_MMM_L030_M2002
+    HttpMethod: POST
+    Content-Type: text/xml;charset=UTF-8
+    ExchangeId: e8a22d38-33c2-4d2e-8d9b-93cc5312a309
+    ServiceName: M2MMML030M2002Service
+    PortName: M2MMML030M2002Port
+    PortTypeName: M2MMML030M2002
+    Headers: {SOAPAction="", host=localhost:8093, connection=Keep-Alive, content-type=text/xml;charset=UTF-8, Content-Length=476, accept-encoding=gzip,deflate, user-agent=Apache-HttpClient/4.1.1 (java 1.5)}
+    Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:m2m="http://M2MMML020M2002.service.ws.ep.stw.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <m2m:M2MMML030M2002Req>
+         <!--Optional:-->
+         <IV_BUKRS>?</IV_BUKRS>
+         <IV_ANLN1_F>?</IV_ANLN1_F>
+         <IV_ANLN2_F>?</IV_ANLN2_F>
+         <!--Optional:-->
+         <IV_ZMOLDNO>?</IV_ZMOLDNO>
+      </m2m:M2MMML030M2002Req>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2020-03-18 13:11:44.699 [http-nio-8093-exec-8] INFO  jdbc.sqltiming - SELECT 'A' LIFNR, 
+           'B' ZMOLDNO, 
+           'C' ZMOLDNAME, 
+           'D' MATNR, 
+           'E' MAKTX, 
+           'F' ANLN1,
+           'G' ANLN2,  
+           'H' ZMOLDICFM,  
+           'I' ZMOLDFCFM, 
+           'J' ZLIFNR, 
+           'K' NAME1
+      FROM DUAL
+ {executed in 59 msec}
+2020-03-18 13:11:44.727 [http-nio-8093-exec-8] INFO  jdbc.resultsettable - 
+|------|--------|----------|------|------|------|------|----------|----------|-------|------|
+|lifnr |zmoldno |zmoldname |matnr |maktx |anln1 |anln2 |zmoldicfm |zmoldfcfm |zlifnr |name1 |
+|------|--------|----------|------|------|------|------|----------|----------|-------|------|
+|A     |B       |C         |D     |E     |F     |G     |H         |I         |J      |K     |
+|------|--------|----------|------|------|------|------|----------|----------|-------|------|
+
+2020-03-18 13:11:44.743 [http-nio-8093-exec-8] INFO  o.a.c.s.M2MMML030M2002.RESP_OUT - RESP_OUT
+    Address: http://localhost:8093/ep/jaxws-services/M2_MMM_L030_M2002
+    Content-Type: text/xml
+    ResponseCode: 200
+    ExchangeId: e8a22d38-33c2-4d2e-8d9b-93cc5312a309
+    ServiceName: M2MMML030M2002Service
+    PortName: M2MMML030M2002Port
+    PortTypeName: M2MMML030M2002
+    Headers: {}
+    Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:processResponse xmlns:ns2="http://M2MMML020M2002.service.ws.ep.stw.com/"><T_MRLIST><LIFNR>A</LIFNR><ZMOLDNO>B</ZMOLDNO><ZMOLDNAME>C</ZMOLDNAME><MATNR>D</MATNR><MAKTX>E</MAKTX><ANLN1>F</ANLN1><ANLN2>G</ANLN2><ZMOLDICFM>H</ZMOLDICFM><ZMOLDFCFM>I</ZMOLDFCFM><ZLIFNR>J</ZLIFNR><NAME1>K</NAME1></T_MRLIST><EV_ZIFFLAG>S</EV_ZIFFLAG><EV_ZIFMSG>SUCCESS</EV_ZIFMSG></ns2:processResponse></soap:Body></soap:Envelope>
+
+2020-03-18 13:16:07.411 [Thread-10] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@572cfc3: startup date [Wed Mar 18 13:10:14 KST 2020]; root of context hierarchy
+2020-03-18 13:16:07.416 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-18 13:16:07.417 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2020-03-18 13:16:07.419 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 13:16:07.547 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 13:16:07.988 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 8168 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 13:16:07.989 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 13:16:07.990 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4039ceb9: startup date [Wed Mar 18 13:16:07 KST 2020]; root of context hierarchy
+2020-03-18 13:16:08.372 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 13:16:08.385 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-18 13:16:08.387 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$59b294bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 13:16:08.389 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 13:16:08.453 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 13:16:08.453 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-18 13:16:08.454 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 13:16:08.454 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.37
+2020-03-18 13:16:08.495 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jakarta.xml.bind-api-2.3.2.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:16:08.496 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\txw2-2.3.2.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:16:08.496 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\istack-commons-runtime-3.0.8.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:16:08.497 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\stax-ex-1.8.1.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:16:08.497 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\FastInfoset-1.2.16.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:16:08.498 [localhost-startStop-1] WARN  o.a.t.util.scan.StandardJarScanner - Failed to scan [file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jakarta.activation-api-1.2.1.jar (지정된 파일을 찾을 수 없습니다)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:196)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5267)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-18 13:16:08.498 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 13:16:08.498 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 13:16:08.499 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 508 ms
+2020-03-18 13:16:08.551 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-03-18 13:16:08.552 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet CXFServlet mapped to [/ep/jaxws-services/*]
+2020-03-18 13:16:08.552 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-18 13:16:08.553 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-18 13:16:08.553 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-18 13:16:08.553 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-18 13:16:08.577 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 13:16:08.751 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 13:16:08.752 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 13:16:08.800 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 13:16:08.822 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 13:16:08.836 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:16:08.877 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4039ceb9: startup date [Wed Mar 18 13:16:07 KST 2020]; root of context hierarchy
+2020-03-18 13:16:08.887 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-18 13:16:08.887 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-18 13:16:08.895 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:16:08.896 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 13:16:08.952 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 13:16:08.966 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-18 13:16:08.967 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2020-03-18 13:16:08.967 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-18 13:16:08.970 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2020-03-18 13:16:08.971 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-03-18 13:16:08.975 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-18 13:16:08.977 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-18 13:16:08.984 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 13:16:08.988 [restartedMain] INFO  com.stw.ep.Application - Started Application in 1.041 seconds (JVM running for 355.902)
+2020-03-18 13:16:08.994 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-18 13:16:18.657 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2020-03-18 13:16:18.657 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4039ceb9: startup date [Wed Mar 18 13:16:07 KST 2020]; root of context hierarchy
+2020-03-18 13:16:18.661 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-18 13:16:18.661 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2020-03-18 13:16:18.662 [RMI TCP Connection(18)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 13:16:18.748 [RMI TCP Connection(18)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 15:50:58.649 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 16608 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 15:50:58.679 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 15:50:58.728 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-18 15:50:58.729 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-18 15:50:58.729 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-18 15:50:59.565 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 15:50:59.740 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$aa0bd7a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 15:50:59.771 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 15:51:00.095 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 15:51:00.101 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-18 15:51:00.102 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 15:51:00.102 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-18 15:51:00.331 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 15:51:00.334 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 15:51:00.334 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1605 ms
+2020-03-18 15:51:00.649 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 15:51:00.979 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 15:51:00.980 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 15:51:01.254 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 15:51:01.578 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 15:51:01.696 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-18 15:51:01.874 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 15:51:01.894 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-18 15:51:01.910 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 15:51:01.914 [restartedMain] INFO  com.stw.ep.Application - Started Application in 3.664 seconds (JVM running for 4.951)
+2020-03-18 15:51:15.058 [http-nio-8093-exec-4] INFO  o.a.c.services.M2MMML030M2002.REQ_IN - REQ_IN
+    Address: http://localhost:8093/ep/jaxws-services/M2_MMM_L030_M2002
+    HttpMethod: POST
+    Content-Type: text/xml;charset=UTF-8
+    ExchangeId: 076917b5-fbe9-46aa-b334-95b96f008c92
+    ServiceName: M2MMML030M2002Service
+    PortName: M2MMML030M2002Port
+    PortTypeName: M2MMML030M2002
+    Headers: {SOAPAction="", host=localhost:8093, connection=Keep-Alive, content-type=text/xml;charset=UTF-8, Content-Length=476, accept-encoding=gzip,deflate, user-agent=Apache-HttpClient/4.1.1 (java 1.5)}
+    Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:m2m="http://M2MMML020M2002.service.ws.ep.stw.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <m2m:M2MMML030M2002Req>
+         <!--Optional:-->
+         <IV_BUKRS>?</IV_BUKRS>
+         <IV_ANLN1_F>?</IV_ANLN1_F>
+         <IV_ANLN2_F>?</IV_ANLN2_F>
+         <!--Optional:-->
+         <IV_ZMOLDNO>?</IV_ZMOLDNO>
+      </m2m:M2MMML030M2002Req>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2020-03-18 15:51:15.239 [http-nio-8093-exec-4] INFO  jdbc.sqltiming - SELECT 'A' LIFNR, 
+           'B' ZMOLDNO, 
+           'C' ZMOLDNAME, 
+           'D' MATNR, 
+           'E' MAKTX, 
+           'F' ANLN1,
+           'G' ANLN2,  
+           'H' ZMOLDICFM,  
+           'I' ZMOLDFCFM, 
+           'J' ZLIFNR, 
+           'K' NAME1
+      FROM DUAL
+ {executed in 87 msec}
+2020-03-18 15:51:15.271 [http-nio-8093-exec-4] INFO  jdbc.resultsettable - 
+|------|--------|----------|------|------|------|------|----------|----------|-------|------|
+|lifnr |zmoldno |zmoldname |matnr |maktx |anln1 |anln2 |zmoldicfm |zmoldfcfm |zlifnr |name1 |
+|------|--------|----------|------|------|------|------|----------|----------|-------|------|
+|A     |B       |C         |D     |E     |F     |G     |H         |I         |J      |K     |
+|------|--------|----------|------|------|------|------|----------|----------|-------|------|
+
+2020-03-18 15:51:15.290 [http-nio-8093-exec-4] INFO  o.a.c.s.M2MMML030M2002.RESP_OUT - RESP_OUT
+    Address: http://localhost:8093/ep/jaxws-services/M2_MMM_L030_M2002
+    Content-Type: text/xml
+    ResponseCode: 200
+    ExchangeId: 076917b5-fbe9-46aa-b334-95b96f008c92
+    ServiceName: M2MMML030M2002Service
+    PortName: M2MMML030M2002Port
+    PortTypeName: M2MMML030M2002
+    Headers: {}
+    Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:processResponse xmlns:ns2="http://M2MMML020M2002.service.ws.ep.stw.com/"><T_MRLIST><LIFNR>A</LIFNR><ZMOLDNO>B</ZMOLDNO><ZMOLDNAME>C</ZMOLDNAME><MATNR>D</MATNR><MAKTX>E</MAKTX><ANLN1>F</ANLN1><ANLN2>G</ANLN2><ZMOLDICFM>H</ZMOLDICFM><ZMOLDFCFM>I</ZMOLDFCFM><ZLIFNR>J</ZLIFNR><NAME1>K</NAME1></T_MRLIST><EV_ZIFFLAG>S</EV_ZIFFLAG><EV_ZIFMSG>SUCCESS</EV_ZIFMSG></ns2:processResponse></soap:Body></soap:Envelope>
+
+2020-03-18 18:47:16.126 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-18 18:47:16.128 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 18:47:16.209 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 18:47:16.536 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 16608 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 18:47:16.537 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 18:47:16.779 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 18:47:16.791 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$aa0bd7a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 18:47:16.793 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 18:47:16.844 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 18:47:16.844 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-18 18:47:16.845 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 18:47:16.845 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-18 18:47:16.890 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 18:47:16.891 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 18:47:16.891 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 351 ms
+2020-03-18 18:47:16.968 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 18:47:17.116 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 18:47:17.116 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 18:47:17.169 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 18:47:17.190 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 18:47:17.254 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-18 18:47:17.333 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 18:47:17.348 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-18 18:47:17.353 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 18:47:17.354 [restartedMain] INFO  com.stw.ep.Application - Started Application in 0.861 seconds (JVM running for 10580.363)
+2020-03-18 18:47:17.359 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-18 18:48:09.772 [RMI TCP Connection(189)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2020-03-18 18:48:09.778 [RMI TCP Connection(189)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-18 18:48:09.778 [RMI TCP Connection(189)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 18:48:09.857 [RMI TCP Connection(189)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 18:48:15.184 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 2796 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 18:48:15.186 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 18:48:15.226 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-18 18:48:15.226 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-18 18:48:15.226 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-18 18:48:15.890 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 18:48:16.011 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$df27812f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 18:48:16.038 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 18:48:16.320 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 18:48:16.329 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-18 18:48:16.330 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 18:48:16.330 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-18 18:48:16.533 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 18:48:16.537 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 18:48:16.537 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1311 ms
+2020-03-18 18:48:16.816 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 18:48:17.172 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 18:48:17.172 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 18:48:17.427 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 18:48:17.751 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 18:48:17.878 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-18 18:48:18.081 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 18:48:18.102 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-18 18:48:18.120 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 18:48:18.123 [restartedMain] INFO  com.stw.ep.Application - Started Application in 3.347 seconds (JVM running for 5.23)
+2020-03-18 18:49:36.934 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-18 18:49:36.936 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 18:49:37.017 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 18:49:56.735 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 22152 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 18:49:56.737 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 18:49:56.772 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\HIVE\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/HIVE/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-18 18:49:56.772 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-18 18:49:56.772 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-18 18:49:57.414 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 18:49:57.529 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$86c9a1be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 18:49:57.556 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 18:49:57.841 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 18:49:57.848 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8093"]
+2020-03-18 18:49:57.848 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 18:49:57.848 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-18 18:49:58.026 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 18:49:58.029 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 18:49:58.030 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1258 ms
+2020-03-18 18:49:58.299 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 18:49:58.646 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 18:49:58.647 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 18:49:58.905 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 18:49:59.238 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 18:49:59.360 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-18 18:49:59.570 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 18:49:59.589 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8093"]
+2020-03-18 18:49:59.607 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 18:49:59.610 [restartedMain] INFO  com.stw.ep.Application - Started Application in 3.263 seconds (JVM running for 4.118)
+2020-03-18 20:00:06.184 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-18 20:00:06.187 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 20:00:06.266 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 20:00:10.442 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 22152 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 20:00:10.442 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 20:00:10.762 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 20:00:10.772 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$86c9a1be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 20:00:10.774 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 20:00:10.821 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 20:00:10.822 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 20:00:10.822 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-18 20:00:10.862 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 20:00:10.864 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 20:00:10.864 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 419 ms
+2020-03-18 20:00:10.932 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 20:00:11.065 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 20:00:11.065 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 20:00:11.102 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 20:00:11.120 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 20:00:11.154 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-18 20:00:11.218 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 20:00:11.234 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 20:00:11.236 [restartedMain] INFO  com.stw.ep.Application - Started Application in 0.862 seconds (JVM running for 4215.698)
+2020-03-18 20:00:11.238 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-18 20:16:21.446 [Thread-17] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-18 20:16:21.447 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 20:16:21.523 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 20:16:25.233 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 22152 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 20:16:25.233 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 20:16:25.478 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 20:16:25.486 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$86c9a1be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 20:16:25.488 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 20:16:25.524 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 20:16:25.524 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 20:16:25.524 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-18 20:16:25.562 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 20:16:25.564 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 20:16:25.564 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 329 ms
+2020-03-18 20:16:25.620 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 20:16:25.790 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 20:16:25.790 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 20:16:25.821 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 20:16:25.837 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 20:16:25.871 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-18 20:16:25.925 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 20:16:25.938 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 20:16:25.939 [restartedMain] INFO  com.stw.ep.Application - Started Application in 0.78 seconds (JVM running for 5190.391)
+2020-03-18 20:16:25.947 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-18 20:31:10.699 [Thread-27] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-18 20:31:10.701 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 20:31:10.821 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.
+2020-03-18 20:31:14.781 [restartedMain] INFO  com.stw.ep.Application - Starting Application on 00000000 with PID 22152 (C:\HIVE\workspace\HIVE\hive-if\target\classes started by owner01 in C:\HIVE\workspace\HIVE\hive-if)
+2020-03-18 20:31:14.781 [restartedMain] INFO  com.stw.ep.Application - The following profiles are active: local
+2020-03-18 20:31:15.029 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.stw.ep]' package. Please check your configuration.
+2020-03-18 20:31:15.037 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$86c9a1be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 20:31:15.038 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-18 20:31:15.076 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8093 (http)
+2020-03-18 20:31:15.077 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-18 20:31:15.077 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-18 20:31:15.116 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-18 20:31:15.117 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-18 20:31:15.117 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 334 ms
+2020-03-18 20:31:15.169 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Starting...
+2020-03-18 20:31:15.301 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Start completed.
+2020-03-18 20:31:15.301 [restartedMain] INFO  com.stw.ep.config.DataSourceConfig - dataSource=HikariDataSource (hikari-cp)
+2020-03-18 20:31:15.332 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://M2MMML020M2002.service.ws.ep.stw.com/}M2MMML030M2002Service from class com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002
+2020-03-18 20:31:15.348 [restartedMain] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /M2_MMM_L030_M2002
+2020-03-18 20:31:15.420 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-18 20:31:15.486 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-03-18 20:31:15.501 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8093 (http) with context path ''
+2020-03-18 20:31:15.503 [restartedMain] INFO  com.stw.ep.Application - Started Application in 0.753 seconds (JVM running for 6079.947)
+2020-03-18 20:31:15.506 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-03-18 20:31:16.091 [RMI TCP Connection(121)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2020-03-18 20:31:16.097 [RMI TCP Connection(121)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-18 20:31:16.098 [RMI TCP Connection(121)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown initiated...
+2020-03-18 20:31:16.180 [RMI TCP Connection(121)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - hikari-cp - Shutdown completed.

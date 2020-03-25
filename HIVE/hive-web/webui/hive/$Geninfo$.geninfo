@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <GenInfo version="1.1">
+    <Rule>
+      <ENV rule_version="1.05"/>
+      <ADL rule_version="1.14"/>
+      <FDL rule_version="1.04"/>
+      <XCSS rule_version="1.03"/>
+      <Script rule_version="1.02"/>
+    </Rule>
+    <Info project="C:\HIVE\workspace\HIVE\web\webui\hive\" generated="C:\Users\owner01\Documents\nexacro\17\outputs\hive\"><File url="typedefinition.xml" checksum="20200303083420" errormsg=""/><File url="appvariables.xml" checksum="20200303083143" errormsg=""/><File url="environment.xml" checksum="20200303083143" errormsg=""/><File url="_resource_\_theme_\default\theme.xcss" checksum="20200303083143" errormsg=""/><File url="App_Desktop.xadl" checksum="20200303083143" errormsg=""/><File url="FrameBase\Form_Top.xfdl" checksum="20200303083143" errormsg=""/><File url="FrameBase\Form_Left.xfdl" checksum="20200303083143" errormsg=""/><File url="FrameBase\Form_Work.xfdl" checksum="20200303112924" errormsg=""/><File url="FrameBase\Form_Bottom.xfdl" checksum="20200303083143" errormsg=""/></Info>
+  </GenInfo>
+</root>

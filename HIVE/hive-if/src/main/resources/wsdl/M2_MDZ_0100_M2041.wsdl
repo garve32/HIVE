@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://M2MDZ0100M2041.service.ws.mes.hps.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="M2MDZ0100M2041Service" targetNamespace="http://M2MDZ0100M2041.service.ws.mes.hps.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://M2MDZ0100M2041.service.ws.mes.hps.com/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://M2MDZ0100M2041.service.ws.mes.hps.com/" version="1.0">
+  <xs:complexType name="m2MDZ0100M2041Req">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="INF_MODL_MATL_IN_MDG" type="tns:INF_MODL_MATL_IN_MDG"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="INF_MODL_MATL_IN_MDG">
+    <xs:sequence>
+      <xs:element name="MATNR" type="xs:string"/>
+      <xs:element minOccurs="0" name="MBRSH" type="xs:string"/>
+      <xs:element minOccurs="0" name="MTART" type="xs:string"/>
+      <xs:element minOccurs="0" name="LVORM" type="xs:string"/>
+      <xs:element minOccurs="0" name="MEINS" type="xs:string"/>
+      <xs:element minOccurs="0" name="MATKL" type="xs:string"/>
+      <xs:element minOccurs="0" name="SPART" type="xs:string"/>
+      <xs:element minOccurs="0" name="PRDHA" type="xs:string"/>
+      <xs:element minOccurs="0" name="MSTAE" type="xs:string"/>
+      <xs:element minOccurs="0" name="MSTDE" type="xs:string"/>
+      <xs:element minOccurs="0" name="BRGEW" type="xs:string"/>
+      <xs:element minOccurs="0" name="GEWEI" type="xs:string"/>
+      <xs:element minOccurs="0" name="NTGEW" type="xs:string"/>
+      <xs:element minOccurs="0" name="VOLUM" type="xs:string"/>
+      <xs:element minOccurs="0" name="GROES" type="xs:string"/>
+      <xs:element minOccurs="0" name="EAN11" type="xs:string"/>
+      <xs:element minOccurs="0" name="NUMTP" type="xs:string"/>
+      <xs:element minOccurs="0" name="WRKST" type="xs:string"/>
+      <xs:element minOccurs="0" name="LAENG" type="xs:string"/>
+      <xs:element minOccurs="0" name="BREIT" type="xs:string"/>
+      <xs:element minOccurs="0" name="HOEHE" type="xs:string"/>
+      <xs:element minOccurs="0" name="MEABM" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZEINR" type="xs:string"/>
+      <xs:element minOccurs="0" name="KZKFG" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZOVLPN" type="xs:string"/>
+      <xs:element minOccurs="0" name="DATAB" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZPDGRP" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZPDABB" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZMDGRP" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZDPROJ" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZDMATNR" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZNEWMD" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZEXTMD" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZSDRPE" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZMKTSF" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZPDPSF" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZRNDSF" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZNAME" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZDESC" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZSPEC" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZREGDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZREGTM" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZREGUS" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZAPPDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZAPPTM" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZAPPUS" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZLAMDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZLAMTM" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZLAMUS" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZPRFLG" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZMMTYP" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZPROJ" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZSEGMT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZDOKAR" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZDOKNR" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZDOKTL" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZDOKVR" type="xs:string"/>
+      <xs:element minOccurs="0" name="BISMT" type="xs:string"/>
+      <xs:element minOccurs="0" name="LABOR" type="xs:string"/>
+      <xs:element minOccurs="0" name="VOLEH" type="xs:string"/>
+      <xs:element minOccurs="0" name="MAGRV" type="xs:string"/>
+      <xs:element minOccurs="0" name="VHART" type="xs:string"/>
+      <xs:element minOccurs="0" name="NORMT" type="xs:string"/>
+      <xs:element minOccurs="0" name="MSTDV" type="xs:string"/>
+      <xs:element minOccurs="0" name="FERTH" type="xs:string"/>
+      <xs:element minOccurs="0" name="TEMPB" type="xs:string"/>
+      <xs:element minOccurs="0" name="RAUBE" type="xs:string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="INF_MODL_DESC_IN_MDG" type="tns:INF_MODL_DESC_IN_MDG"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="INF_MODL_CLASSASGN_IN_MDG" type="tns:INF_MODL_CLASSASGN_IN_MDG"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="INF_MODL_CHARASGN_IN_MDG" type="tns:INF_MODL_CHARASGN_IN_MDG"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="INF_MODL_UNIT_IN_MDG" type="tns:INF_MODL_UNIT_IN_MDG"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="INF_MODL_PLNT_IN_MDG" type="tns:INF_MODL_PLNT_IN_MDG"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="INF_MODL_MEAN_IN_MDG" type="tns:INF_MODL_MEAN_IN_MDG"/>
+      <xs:element minOccurs="0" name="ZZSUBBOM" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZBUYER" type="xs:string"/>
+      <xs:element minOccurs="0" name="EXTWG" type="xs:string"/>
+      <xs:element minOccurs="0" name="MTPOS_MARA" type="xs:string"/>
+      <xs:element minOccurs="0" name="KZEFF" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZMSBOOK" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZENGTYP" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZTECENG" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZQTYENG" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZSALVTYP" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="INF_MODL_DESC_IN_MDG">
+    <xs:sequence>
+      <xs:element name="SPRAS" type="xs:string"/>
+      <xs:element minOccurs="0" name="MAKTX" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="INF_MODL_CLASSASGN_IN_MDG">
+    <xs:sequence>
+      <xs:element name="CLASS" type="xs:string"/>
+      <xs:element name="KLART" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="INF_MODL_CHARASGN_IN_MDG">
+    <xs:sequence>
+      <xs:element name="CLASS" type="xs:string"/>
+      <xs:element name="KLART" type="xs:string"/>
+      <xs:element name="ATNAM" type="xs:string"/>
+      <xs:element minOccurs="0" name="ATWRT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ATFLV" type="xs:string"/>
+      <xs:element minOccurs="0" name="ATAWE" type="xs:string"/>
+      <xs:element minOccurs="0" name="ATFLB" type="xs:string"/>
+      <xs:element minOccurs="0" name="ATAW1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="INF_MODL_UNIT_IN_MDG">
+    <xs:sequence>
+      <xs:element name="MEINH" type="xs:string"/>
+      <xs:element minOccurs="0" name="UMREZ" type="xs:string"/>
+      <xs:element minOccurs="0" name="UMREN" type="xs:string"/>
+      <xs:element minOccurs="0" name="LAENG" type="xs:string"/>
+      <xs:element minOccurs="0" name="BREIT" type="xs:string"/>
+      <xs:element minOccurs="0" name="HOEHE" type="xs:string"/>
+      <xs:element minOccurs="0" name="MEABM" type="xs:string"/>
+      <xs:element minOccurs="0" name="VOLUM" type="xs:string"/>
+      <xs:element minOccurs="0" name="VOLEH" type="xs:string"/>
+      <xs:element minOccurs="0" name="BRGEW" type="xs:string"/>
+      <xs:element minOccurs="0" name="GEWEI" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="INF_MODL_PLNT_IN_MDG">
+    <xs:sequence>
+      <xs:element name="WERKS" type="xs:string"/>
+      <xs:element minOccurs="0" name="MMSTA" type="xs:string"/>
+      <xs:element minOccurs="0" name="LVORM" type="xs:string"/>
+      <xs:element minOccurs="0" name="MMSTD" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZMTARP" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZPRFLG" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZREGDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZREGTM" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZREGUS" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZLAMDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZLAMTM" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZLAMUS" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZPDRDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZSDRDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZVDRDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZRTSRDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZSRARDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZRTSCDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZSRACDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZACTDT" type="xs:string"/>
+      <xs:element minOccurs="0" name="ZZBKLAS" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="INF_MODL_MEAN_IN_MDG">
+    <xs:sequence>
+      <xs:element name="MEINH" type="xs:string"/>
+      <xs:element name="LFNUM" type="xs:string"/>
+      <xs:element minOccurs="0" name="EAN11" type="xs:string"/>
+      <xs:element minOccurs="0" name="EANTP" type="xs:string"/>
+      <xs:element minOccurs="0" name="HPEAN" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="M2MDZ0100M2041Req" nillable="true" type="tns:m2MDZ0100M2041Req"/>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="processResponse">
+  </wsdl:message>
+  <wsdl:message name="process">
+    <wsdl:part element="tns:M2MDZ0100M2041Req" name="M2MDZ0100M2041Req">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="M2MDZ0100M2041">
+    <wsdl:operation name="process">
+      <wsdl:input message="tns:process" name="process">
+    </wsdl:input>
+      <wsdl:output message="tns:processResponse" name="processResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="M2MDZ0100M2041ServiceSoapBinding" type="tns:M2MDZ0100M2041">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="process">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="process">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="processResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="M2MDZ0100M2041Service">
+    <wsdl:port binding="tns:M2MDZ0100M2041ServiceSoapBinding" name="M2MDZ0100M2041Port">
+      <soap:address location="http://10.42.236.24:8061/hpsmesif/jaxws-services/M2_MDZ_0100_M2041"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

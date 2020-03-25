@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- Mapper interface의 패키지 풀네임 -->
+<mapper namespace="com.hanwha.hive_web.sample.mapper.HelloMapper">
+	
+	<!-- 샘플 목록 조회 -->
+	<select id="selectName" parameterType="map" resultType="hashmap">
+	SELECT USER_ID
+	     , USER_NM
+	  FROM STW_USER_TEST
+	 WHERE USER_ID like '%'||#{searchKeyword}
+	</select>
+	
+	<!--  -->
+	<insert id="insertUserTest" parameterType="map">
+	INSERT INTO STW_USER_TEST
+	( USER_ID
+	, USER_NM
+	, USER_ENG_NM
+	, GENDER_CD
+	, LANG_CD
+	, DEL_CD
+	, INSERT_UID
+	, INSERT_DT
+	, UPDATE_UID
+	, UPDATE_DT
+	) VALUES (
+	  #{USER_ID}
+	, #{USER_NM}
+	, #{USER_ENG_NM}
+	, #{GENDER_CD}
+	, 'ko'
+	, 'N'
+	, #{INSERT_UID}
+	, SYSDATE
+	, #{UPDATE_UID}
+	, SYSDATE
+	)
+	</insert>
+	
+	<update id="updateUserTest" parameterType="map">
+	UPDATE STW_USER_TEST
+	   SET USER_NM = #{USER_NM}
+	     , UPDATE_DT = SYSDATE
+	 WHERE USER_ID = #{USER_ID}
+	</update>
+	
+	<delete id="deleteUserTest" parameterType="map">
+	DELETE STW_USER_TEST
+	 WHERE USER_ID = #{USER_ID}
+	</delete>
+	
+</mapper>

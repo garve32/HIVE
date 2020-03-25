@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+	<conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
+    
+        <logger name="jdbc" level="OFF"/>
+        <logger name="jdbc.sqlonly" level="OFF"/>
+        <logger name="jdbc.sqltiming" level="INFO"/>
+        <logger name="jdbc.audit" level="OFF"/>
+        <logger name="jdbc.resultset" level="OFF"/>
+        <logger name="jdbc.resultsettable" level="INFO"/>
+        <logger name="jdbc.connection" level="OFF"/>
+    
+        <include resource="appenders/appender-file.xml" />
+          <root level="INFO">
+            <appender-ref ref="FILE" />
+          </root>
+    
+        <include resource="appenders/appender-console.xml" />
+          <root level="INFO">
+              <appender-ref ref="CONSOLE" />
+          </root>
+	
+	<!-- cxf log settings -->
+	<appender name="cxf" class="ch.qos.logback.classic.sift.SiftingAppender">
+		<discriminator class="com.stw.ep.config.LoggerNameBasedDiscriminator" />
+		<sift>
+			<appender name="FILE-${loggerName}" class="ch.qos.logback.core.FileAppender">
+				<file>${LOG_PATH}/${loggerName}.log</file>
+		        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+		            <fileNamePattern>${LOG_PATH}/${loggerName}%d{yyyy-MM-dd}.log</fileNamePattern>
+		            <maxHistory>60</maxHistory>
+		        </rollingPolicy>
+		        <encoder>
+		            <pattern>${log.pattern}</pattern>
+		        </encoder>		        
+			</appender>
+		</sift>
+    </appender>
+         <!-- cxf related logs -->
+    <logger name="com.stw.ep.ws.service.M2MMML030M2002Service" level="INFO">
+        <appender-ref ref="cxf"/>
+    </logger>    
+
+</configuration>

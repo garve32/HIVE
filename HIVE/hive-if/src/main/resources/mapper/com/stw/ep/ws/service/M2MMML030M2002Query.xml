@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- Mapper interface의 패키지 풀네임 -->
+<mapper namespace="M2MMML030M2002Service">
+	
+	<!-- 샘플 목록 조회 -->
+	<select id="selectT_MRLIST" parameterType="map" resultType="com.stw.ep.ws.service.M2MMML020M2002.T_MRLIST">
+	SELECT 'A' LIFNR, 
+           'B' ZMOLDNO, 
+           'C' ZMOLDNAME, 
+           'D' MATNR, 
+           'E' MAKTX, 
+           'F' ANLN1,
+           'G' ANLN2,  
+           'H' ZMOLDICFM,  
+           'I' ZMOLDFCFM, 
+           'J' ZLIFNR, 
+           'K' NAME1
+      FROM DUAL
+	</select>
+	
+	
+</mapper>
