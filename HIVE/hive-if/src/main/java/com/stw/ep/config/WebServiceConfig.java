@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.ws.config.annotation.EnableWs;
 
 import com.stw.ep.ws.service.M2MMML020M2002.M2MMML030M2002;
+import com.hps.mes.ws.service.A0MDZ0210M2041.A0MDZ0210M2041;
 
 @EnableWs
 @Configuration
@@ -42,11 +43,14 @@ public class WebServiceConfig {//extends WsConfigurerAdapter{
         endpoint.publish("/M2_MMM_L030_M2002");
         return endpoint;
 	}
-//	@Bean
-//	public Endpoint M2_MMM_L030_M2003(Bus cxfBus) {
-//		EndpointImpl endpoint = new EndpointImpl(springBus(), new M2MMML030M2002());
-//		endpoint.publish("/M2_MMM_L030_M2003");
-//		return endpoint;
-//	}
+	
+	@Autowired
+	private A0MDZ0210M2041 A0MDZ0210M2041;
+	@Bean
+	public Endpoint A0_MDZ_0210_M2041(Bus cxfBus) {
+		EndpointImpl endpoint = new EndpointImpl(springBus(), A0MDZ0210M2041);
+		endpoint.publish("/A0_MDZ_0210_M2041");
+		return endpoint;
+	}
 	
 }
